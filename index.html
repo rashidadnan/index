@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head><title>Application Form</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+ *{
+      margin: 0;
+      padding: 0;
+   }
+ body{
+      background-image: url("image/paper.gif");
+      background-color: gray;
+      background-size: 280%;
+      background-position: 400px;
+    }
+ div.main{
+      width: 400px;
+      margin: 5px auto 0px auto;
+     }
+ h1{ 
+      color: green;
+      text-align: center;
+      padding: 20px;
+      font-family: sans-sarif;
+   }
+ div.register{
+      background-color:lightblue;
+      width: 130%;
+      font-size: 20px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.4)
+      color: #fff;
+   }
+form#register{
+      margin: 50px;
+    }
+label{
+      font-family: sans-sarif;
+      font-size: 18px;
+      font-style: italic;
+     }
+input#name{
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      outline: 0;
+      padding: 7px;
+      box-shadow: 1px 1px 5px rgba (0,0,0,0.3);
+      background-color: #fff;
+    }
+input#submit{
+        width: 200px;
+      border: 1px solid rgba(250,100,0,0.8);
+      border-radius: 3px;
+      padding: 17px;
+      box-shadow:  1px 1px 5px rgba (0,0,0,0.3);
+      background-color: rgba(250,100,0,0.8);
+      font-size: 16px;
+      font-family: sans-sarif;
+      font-height: 600;
+      color: #fff;
+      cursor: pointer;
+       }
+
+
+
+</style>
+</head><body>
+  
+ <div class="main">
+ <div class="register">
+ <h1>Job Application Form</h1>
+<form id="register" method="post">
+ <label for="fname"><b>First name :</b></label><br>
+   <input type="text" id="fname" name="fname" placeholder="Enter your First name"><br><br>
+ <label for="lname"><b>Last name :</b><label><br>
+   <input type="text" id="lname" name="lname" placeholder="Enter your Last name"><br><br>
+ <label for="email"><b>E-mail :</b></label><br>
+   <input type="email" id="email" name="email" placeholder="Enter your e-mail"><br><br>
+ <label for="pass"><b>Password :</b></label><br>
+   <input type="password" id="pass" name="pass" placeholder="Enter your password"><br><br>
+ <label for="date"><b>Date Of Birth :</b></label><br>
+   <input type="date" id="date" name="date" placeholder="Enter your D.O.B"><br><br>
+ <label for="gender"><b>Gender :</b></label>
+   <input type="checkbox" value="Male"> 
+ <label for="male">Male</label>
+   <input type="checkbox" value="Female">
+ <label for="female">Female</label><br><br>
+ <label for="study"><b>Education Qualification :</b></label>
+   <select id="study" name="study">
+ <option value="ssc">SSC</option>
+ <option value="hsc">HSC</option>
+ <option value="undergraduate">Undergraduate</option></select><br><br>
+  <label for="blood"><b>Blood  :</b></label> 
+    <select id="blood" name="blood">
+ <option value="A+">A+</option>
+ <option value="A-">A-</option>
+ <option value="B+">B+</option>
+ <option value="B-">B-</option>
+ <option value="O-">O-</option></select><br><br>
+<label for="photo"><b>Photo :</b><label>
+    <input type="file" name="photo"><br><br>
+ <label for="phone"><b>Number :</b></label><br>
+   <input type="phone" placeholder="Enter your number"><br><br>
+ <label for="addre"><b>Address :</b></label><br>
+   <input type="address" id="addre" name="addre" placeholder="Enter your address" style="padding:15px;"><br><br>  
+ <input type="submit" value="Submit">
+   <input type="reset" value="Reset"></form>
+ </div><!--end register-->
+ </div><!--end main-->
+  
+</body>
+</html>
